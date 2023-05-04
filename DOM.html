@@ -12,52 +12,51 @@
 
 </head>
 <body>
-  <header>
-    <h1>Shopping</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="panier"><i class="fas fa-shopping-cart"></i><span class="nombre-articles-panier">0</span></div>
-  </header>
-  <main>
-    <section class="article">
-      <img src="https://i.pinimg.com/564x/37/ea/dc/37eadc936317c7fe884791df2cf5a0d9.jpg" alt="Article 1">
-      <h2>Sac</h2>
-      <p>Prix : 8000FCFA</p>
-      <button class="minus">-</button>
-      <span class="num">1</span>
-      <button class="plus">+</button>
-      <button class="ajouter-au-panier">Ajouter au panier</button>
-    </section>
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <td>Apple</td>
+      <td>1000frs</td>
+      <td>
+        <button onclick="adjustQuantity('apple', -1)">-</button>
+        <span id="apple-quantity">0</span>
+        <button onclick="adjustQuantity('apple', 1)">+</button>
+        <button onclick="changerCouleur(this)" ><i class="far fa-heart"></i></button>
+        <button onclick="supprimer('apple')"><box-icon type='solid' name='trash'></box-icon></button>
+      </td>
+    
+    <tr>
+      <td>Banana</td>
+      <td>2000frs</td>
+    
+    <td>
+      <button onclick="adjustQuantity('banana', -1)">-</button>
+        <span id="banana-quantity">0</span>
+        <button onclick="adjustQuantity('banana', 1)">+</button>
+        <button onclick="changerCouleur(this)" ><i class="far fa-heart"></i></button>
+        <button onclick="supprimer('banana')"><box-icon type='solid' name='trash'></box-icon></button>
+    </td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>2000frs</td>
+      <td>
+        <button onclick="adjustQuantity('orange', -1)">-</button>
+        <span id="orange-quantity">0</span>
+        <button onclick="adjustQuantity('orange', 1)">+</button>
+        <button onclick="changerCouleur(this)" ><i class="far fa-heart"></i></button>
+        <button onclick="supprimer('orange')"><box-icon type='solid' name='trash'></box-icon></button>
+     </td>
+    </tr>
+  </table>
+  <div id="total-price">TOTAL=0frs</div>
 
-    <section class="article">
-      <img src="https://i.pinimg.com/564x/4d/10/04/4d1004a33e6e1677462f6b783b4f2bcc.jpg" alt="Article 2">
-      <h2>Basket</h2>
-      <p>Prix : 15000FCFA</p>
-      <button class="minus">-</button>
-      <span class="num">1</span>
-      <button class="plus">+</button>
-      <button  class="ajouter-au-panier">Ajouter au panier</button>
-    </section>
+  
 
-    <section class="article">
-      <img src="https://i.pinimg.com/564x/0b/ed/d7/0bedd78afe7bcc5d63ee424265a774e5.jpg" alt="Article 3">
-      <h2>Lunettes</h2>
-      <p>Prix : 10000FCFA</p>
-      <button class="minus">-</button>
-      <span class="num">1</span>
-      <button class="plus">+</button>
-      <button class="ajouter-au-panier">Ajouter au panier</button>
-    </section>
-  </main>
-
-  <footer>
-    <p>shopping - Tous droits réservés</p>
-  </footer>
 </body>
 </html>
 
